@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physics Wallah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon" href="./pw/logo.png" type="image/x-icon">
+
+  <style>
+    * {
+      font-family: Gilroy, sans-serif;
+
+    }
+
+    ::-webkit-scrollbar {
+      width: .2rem;
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #0d5ff8;
+    }
+
+    .active {
+      background: black;
+    }
+
+    #nav-link.expand {
+      transform: translateX(0);
+    }
+
+    #accountdata.show {
+      display: block;
+    }
+  </style>
+</head>
+
+<body class=" scroll-smooth">
+  <header class="w-full pb-24">
+    <div id="nav-link"
+      class="min-w-[15rem] max-w-[15rem] border max-lg:shadow-2xl fixed left-0 top-0 h-[100vh] z-[101] max-lg:translate-x-[-200%] bg-white transition-all duration-200 ">
+      <div class="shadow border min-h-[4rem] z-30 flex items-center justify-center gap-3 mb-5">
+        <img src="./pw/logo.png" alt="PW" class="w-12">
+        <h2 class="font-mullish font-bold">Physics Wallah</h2>
+      </div>
+      <div class="px-2 space-y-2 overflow-y-scroll max-h-[85vh] ">
+        <div
+          class="flex items-center px-4 py-2 rounded-md hover:bg-gray-100 cursor-pointer transition-all duration-200">
+          <p class="space-x-4  text-[.9rem] text-gray-500"><i class="fa fa-book"></i><span>Study</span></p>
+        </div>
+        <div class="flex items-center px-4 py-2 rounded-md bg-blue-100 border-b-2 border-blue-600">
+          <p class="space-x-4  text-[.9rem] text-blue-500 font-semibold"><i
+              class="fa fa-laptop"></i><span>Batches</span></p>
+        </div>
+        <div
+          class="flex items-center px-4 py-2 rounded-md hover:bg-gray-100 cursor-pointer transition-all duration-200">
+          <p class="space-x-4  text-[.9rem] text-gray-500"><i class="fa-solid fa-school"></i><span>Pw Centres</span></p>
+        </div>
+        <div
+          class="flex items-center px-4 py-2 rounded-md hover:bg-gray-100 cursor-pointer transition-all duration-200">
+          <p class="space-x-4  text-[.9rem] text-gray-500"><i class="fa-solid fa-gem"></i><span>VP Live</span></p>
+        </div>
+        <div
+          class="flex items-center px-4 py-2 rounded-md hover:bg-gray-100 cursor-pointer transition-all duration-200 ">
+          <p class="space-x-4  text-[.9rem] text-gray-500"><i class="fa-solid fa-cart-shopping"></i><span>PW
+              Store</span></p>
+        </div>
+        <div
+          class="flex items-center px-4 py-2 rounded-md hover:bg-gray-100 cursor-pointer transition-all duration-200 ">
+          <p class="space-x-4  text-[.9rem] text-gray-500"><i class="fa-solid fa-clipboard"></i><span>Test Series</span>
+          </p>
+        </div>
+        <hr>
+
+        <div
+          class="flex items-center px-4 py-2 rounded-md hover:bg-gray-100 cursor-pointer transition-all duration-200 ">
+          <p class="space-x-4  text-[.9rem] text-gray-500"><i
+              class="fa-solid fa-graduation-cap"></i><span>Scolarship</span></p>
+        </div>
+        <div
+          class="flex items-center px-4 py-2 rounded-md hover:bg-gray-100 cursor-pointer transition-all duration-200 ">
+          <p class="space-x-4  text-[.9rem] text-gray-500"><i
+              class="fa-solid fa-lightbulb"></i><span>Quick-Learning</span></p>
+        </div>
+        <div
+          class="flex items-center px-4 py-2 rounded-md hover:bg-gray-100 cursor-pointer transition-all duration-200 ">
+          <p class="space-x-4  text-[.9rem] text-gray-500 flex items-center"><i class="fa-solid fa-bullseye"></i><span
+              class="flex items-start">Upskilling - Job Assistance</span></p>
+        </div>
+        <div
+          class="flex items-center px-4 py-2 rounded-md hover:bg-gray-100 cursor-pointer transition-all duration-200 ">
+          <p class="space-x-4  text-[.9rem] text-gray-500"><i class="fa fa-book"></i><span>Library</span></p>
+        </div>
+        <div
+          class="flex items-center px-4 py-2 rounded-md hover:bg-gray-100 cursor-pointer transition-all duration-200 ">
+          <p class="space-x-4  text-[.9rem] text-gray-500"><i class="fa fa-school"></i><span>PW Champions League</span>
+          </p>
+        </div>
+        <div
+          class="flex items-center px-4 py-2 rounded-md hover:bg-gray-100 cursor-pointer transition-all duration-200 ">
+          <p class="space-x-4  text-[.9rem] text-gray-500"><i class="fa fa-share"></i><span>Refer & Earn</span></p>
+        </div>
+        <div
+          class="flex items-center px-4 py-2 rounded-md hover:bg-gray-100 cursor-pointer transition-all duration-200 ">
+          <p class="space-x-4  text-[.9rem] text-gray-500"><i class="fa-solid fa-newspaper"></i><span>Feed</span></p>
+        </div>
+        <div
+          class="flex items-center px-4 py-2 rounded-md hover:bg-gray-100 cursor-pointer transition-all duration-200 ">
+          <p class="space-x-4  text-[.9rem] text-gray-500"><i class="fa-solid fa-phone-volume"></i><span>Contact
+              US</span></p>
+        </div>
+        <hr>
+        <div class="flex items-center px-4 py-2 cursor-pointer">
+          <p class="text-sm color text-blue-500">See More <i class="fa fa-chevron-right"></i></p>
+        </div>
+
+      </div>
+    </div>
+    <nav class=" px-24 shadow-md fixed w-full z-[100] bg-white max-lg:px-8 max-[480px]:px-2">
+      <div class=" ml-[15rem] flex justify-between items-center min-h-[4rem] max-lg:ml-0">
+        <div class="hidden max-lg:block">
+          <button id="toggler"><i class="fa-solid fa-bars text-blue-700"></i></button>
+        </div>
+        <div>
+          <div class="shadow-md rounded-sm px-4 py-2 flex items-center space-x-2 overflow-hidden cursor-pointer">
+            <img src="./pw/19fd9f1c-2fd7-41f9-9903-ce5a00bc4a68.png" alt=" " class="w-6">
+            <p class="font-bold text-sm">Foundation - Class 10</p>
+            <i class="fa fa-chevron-right text-blue-600 text-xs"></i>
+          </div>
+        </div>
+        <div class="flex items-center space-x-3">
+          <div>
+            <h3 class="font-bold text-sm max-sm:hidden">Hi, USER</h3>
+          </div>
+          <div class="space-x-2 flex items-center" onclick="account();">
+            <div
+              class="w-[2.5rem] h-[2.5rem] border shadow-lg rounded-full cursor-pointer flex justify-center items-center">
+              <img src="./pw/girl.png" alt="" class="w-[80%] h-[80%]">
+            </div>
+            <i class="fa-solid fa-chevron-down text-xs"></i>
+          </div>
+
+          <div id="accountdata"
+            class="fixed top-16 right-4 max-lg:right-1 border shadow-md min-h-[5rem] min-w-[5rem] bg-white rounded-md hidden transition-all duration-200">
+            <div class="px-1 py-1 pt-3 flex flex-col space-y-3 items-start">
+              <button class="px-4 py-2 text-sm space-x-3"><i class="fa-solid fa-user"></i><span>My
+                  Profile</span></button>
+              <button class=" px-4 py-2  text-sm space-x-3"><i class="fa-solid fa-suitcase"></i><span>My
+                  Purchase</span></button>
+            </div>
+            <hr>
+            <div class="flex px-1 justify-start">
+              <button class=" px-4 py-5 text-sm space-x-3"><i
+                  class="fa-solid fa-right-from-bracket"></i><span>Logout</span></button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </nav>
+  </header>
+  <main class="ml-[20rem] mr-24 max-lg:mx-8 max-[480px]:mx-2" id="main">
+    <div class="flex items-center gap-4">
+      <div class="w-[80vw] relative">
+        <form action="">
+          <input type="text" name="batch" placeholder="Search for 'batches'... "
+            class="w-full border rounded-md px-10 py-2 bg-gray-200 outline-none placeholder:text-gray-500 max-sm:px-7">
+      </div>
+      </form>
+      <div class="absolute left-[21rem] max-lg:left-[5vw] max-sm:left-[8vw] max-[480px]:left-[5vw]">
+        <i class="fa fa-search text-blue-600"></i>
+      </div>
+      <button class="px-8 py-2 bg-blue-600 text-white font-bold rounded-md max-sm:px-3">Study</button>
+    </div>
+    <!-- Slider -->
+    <div class="relative w-full h-[10rem] rounded-2xl mt-6 border flex items-center justify-center max-lg:h-full">
+      <div class="overflow-hidden rounded-lg">
+        <div class="flex items-center h-full w-full transition-all duration-200" id="slider">
+          <img src="./pw/1cd69234-fbe5-46f3-a14b-22c3c9fe5bf6.jpg" alt="Image 1" class="w-full h-full object-contain">
+          <img src="./pw/2d8435c6-6677-4e8e-b3c8-0b338393d1b3.jpg" alt="Image 2" class="w-full h-full object-contain">
+          <img src="./pw/48193ab4-7eb3-4a03-8a10-4265e31b9dd2.jpg" alt="Image 3" class="w-full h-full object-contain">
+        </div>
+      </div>
+      <div class="flex justify-center absolute bottom-1  right-0 left-0 gap-3">
+        <button class="active rounded-full bg-white w-3 h-3 button "></button>
+        <button class="rounded-full w-3 h-3 button bg-white"></button>
+        <button class="rounded-full  w-3 h-3 button bg-white"></button>
+      </div>
+    </div>
+
+    <!-- Batches -->
+    <div class="mt-8 ml-2">
+      <div class="flex space-x-4 items-cente mb-3">
+        <div class="flex items-center space-x-2  border-blue-600 px-3 rounded-b-sm border-b-[3px] cursor-pointer">
+          <i class="fa-solid fa-globe text-sm text-blue-500"></i>
+          <h2 class="text-sm text-blue-600">All</h2>
+        </div>
+        <div class="flex items-center space-x-2 cursor-pointer">
+          <i class="fa-solid fa-house text-sm text-gray-500"></i>
+          <h2 class="text-sm text-gray-500">Offline</h2>
+        </div>
+        <div class="flex items-center space-x-2 cursor-pointer">
+          <i class="fa-solid fa-rocket text-sm text-gray-500"></i>
+          <h2 class="text-sm text-gray-500">Upcoming</h2>
+        </div>
+        <div class="flex items-center space-x-2 cursor-pointer">
+          <h2 class="text-sm text-gray-500 max-sm:hidden">State Boards</h2>
+        </div>
+        <div class="flex items-center space-x-2 cursor-pointer">
+          <h2 class="text-sm text-gray-500 max-sm:hidden">VP Live</h2>
+        </div>
+      </div>
+      <div>
+        <h2 class="font-semibold text-sm text-gray-800">44 Batches available</h2>
+      </div>
+    </div>
+    <div class="flex gap-5 max-lg:flex-wrap max-lg:grid max-lg:grid-cols-2 max-md:flex justify-center">
+      <div class="rounded-2xl border min-h-[25rem] w-[25rem] bg-white mt-6 overflow-hidden">
+        <div class="px-3 pt-5 pb-2">
+
+          <div class="justify-between flex items-center mb-8">
+            <h2 class="text-black font-mullish font-bold text-lg">Udaan 2025</h2>
+            <div class="flex items-center gap-3">
+              <p class="py-[.35rem] px-2 bg-[#fbde47] rounded-md font-mullish text-[.7rem] font-extrabold">New</p>
+              <a href=""><i class="fab fa-whatsapp text-black text-2xl"></i></a>
+            </div>
+          </div>
+          <div>
+            <div class="relative max-w-full mb-4">
+              <img src="./pw/65a4649f-f80f-4a12-9e15-88cd7c228603.png" alt="" class="rounded-md">
+              <div class="absolute bottom-2 left-2 bg-slate-200 rounded-lg px-1 py-[.15rem]">
+                <p class="text-[.65rem] font-bold">Hinglish</p>
+              </div>
+            </div>
+
+            <div class="relative space-y-3">
+              <p class="font-bold text-[.7rem] font-mullish">Udaan 2025 for Class 10 Students</p>
+              <p class="font-bold text-[.7rem] font-mullish text-gray-500"><i class="fa fa-calendar"></i> Starts on
+                <span class="text-black">10 Apr, 2024</span> | Ends on <span class="text-black">31 Mar, 2025</span>
+              </p>
+            </div>
+
+          </div>
+          <div class="rounded-lg overflow-hidden w-full border p-1 mt-2 bg-deepBlue min-h-6 flex items-center">
+            <p class="px-4 text-gray-100 text-xs">New Batch Plans Included</p>
+          </div>
+
+        </div>
+        <hr>
+        <div class="px-3 py-2 mb-5">
+          <div class="flex justify-between items-center mb-4">
+            <div>
+              <h2 class="text-[#664cda] font-bold">$2999 <span
+                  class="line-through text-gray-400 text-sm font-normal">3500</span></h2>
+              <p class="text-[.7rem] text-gray-400">(For Full Batch)</p>
+            </div>
+            <div class="bg-[#d0fbe9] rounded-xl px-2 py-2">
+              <p class="text-xs font-bold text-[#5bb58a]"><i class="fa fa-tag"></i> Discount of 14% applied</p>
+            </div>
+          </div>
+          <div class="flex justify-evenly items-center">
+            <button
+              class="text-[#664cda] bg-blue-100 px-8 py-2 font-bold font-mullish rounded-md uppercase text-[.75rem]">Explore</button>
+            <button
+              class="text-white bg-[#664cda] px-8 py-2 font-bold font-mullish rounded-md uppercase text-[.75rem]">Enroll
+              Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-2xl border min-h-[25rem] w-[25rem] bg-white mt-6 overflow-hidden">
+        <div class="px-3 pt-5 pb-7">
+
+          <div class="justify-between flex items-center mb-8">
+            <h2 class="text-black font-mullish font-bold text-lg">Victory 2025</h2>
+            <div class="flex items-center gap-3">
+              <p class="py-[.35rem] px-2 bg-[#fbde47] rounded-md font-mullish text-[.7rem] font-extrabold">New</p>
+              <a href=""><i class="fab fa-whatsapp text-black text-2xl"></i></a>
+            </div>
+          </div>
+          <div>
+            <div class="relative max-w-full mb-6">
+              <img src="./pw/c173a4e5-4166-46c5-aca7-89e82ce50cc8.png" alt="" class="rounded-md">
+              <div class="absolute bottom-2 left-2 bg-slate-200 rounded-lg px-1 py-[.15rem]">
+                <p class="text-[.65rem] font-bold">English</p>
+              </div>
+            </div>
+
+            <div class="relative space-y-3">
+              <p class="font-bold text-[.7rem] font-mullish">Victory 2025 for Class 10th-ICSE Students</p>
+              <p class="font-bold text-[.7rem] font-mullish text-gray-500"><i class="fa fa-calendar"></i> Starts on
+                <span class="text-black">1 May, 2024</span> | Ends on <span class="text-black">31 Mar, 2025</span>
+              </p>
+            </div>
+
+          </div>
+
+
+        </div>
+        <hr>
+        <div class="px-3 py-2 mb-5">
+          <div class="flex justify-between items-center mb-4">
+            <div>
+              <h2 class="text-[#664cda] font-bold">$3999 <span
+                  class="line-through text-gray-400 text-sm font-normal">4500</span></h2>
+              <p class="text-[.7rem] text-gray-400">(For Full Batch)</p>
+            </div>
+            <div class="bg-[#d0fbe9] rounded-xl px-2 py-2">
+              <p class="text-xs font-bold text-[#5bb58a]"><i class="fa fa-tag"></i> Discount of 11% applied</p>
+            </div>
+          </div>
+          <div class="flex justify-evenly items-center">
+            <button
+              class="text-[#664cda] bg-blue-100 px-8 py-2 font-bold font-mullish rounded-md uppercase text-[.75rem]">Explore</button>
+            <button
+              class="text-white bg-[#664cda] px-8 py-2 font-bold font-mullish rounded-md uppercase text-[.75rem]">Buy
+              Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-2xl border min-h-[25rem] w-[25rem] bg-white mt-6 overflow-hidden">
+        <div class="px-3 pt-5 pb-7">
+
+          <div class="justify-between flex items-start mb-2">
+            <h2 class="text-black font-mullish font-bold text-lg">Udaan UP Board 2025 - For Hindi Medium</h2>
+            <div class="flex items-center gap-3">
+              <p class="py-[.35rem] px-2 bg-[#fbde47] rounded-md font-mullish text-[.7rem] font-extrabold">New</p>
+              <a href=""><i class="fab fa-whatsapp text-black text-2xl"></i></a>
+            </div>
+          </div>
+          <div>
+            <div class="relative max-w-full mb-6">
+              <img src="./pw/f59c22ff-e46d-449e-8da5-1e4b860fb366.png" alt="" class="rounded-md">
+              <div class="absolute bottom-2 left-2 bg-slate-200 rounded-lg px-1 py-[.15rem]">
+                <p class="text-[.65rem] font-bold">हिंदी</p>
+              </div>
+            </div>
+
+            <div class="relative space-y-3">
+              <p class="font-bold text-[.7rem] font-mullish">For Class 10th UP & CBSE Boards Students</p>
+              <p class="font-bold text-[.7rem] font-mullish text-gray-500"><i class="fa fa-calendar"></i> Starts on
+                <span class="text-black">13 May, 2024</span> | Ends on <span class="text-black">31 Mar, 2025</span>
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+        <hr>
+        <div class="px-3 py-2 mb-5">
+          <div class="flex justify-between items-center mb-4">
+            <div>
+              <h2 class="text-[#664cda] font-bold">$1999 <span
+                  class="line-through text-gray-400 text-sm font-normal">2500</span></h2>
+              <p class="text-[.7rem] text-gray-400">(For Full Batch)</p>
+            </div>
+            <div class="bg-[#d0fbe9] rounded-xl px-2 py-2">
+              <p class="text-xs font-bold text-[#5bb58a]"><i class="fa fa-tag"></i> Discount of 20% applied</p>
+            </div>
+          </div>
+          <div class="flex justify-evenly items-center">
+            <button
+              class="text-[#664cda] bg-blue-100 px-8 py-2 font-bold font-mullish rounded-md uppercase text-[.75rem]">Explore</button>
+            <button
+              class="text-white bg-[#664cda] px-8 py-2 font-bold font-mullish rounded-md uppercase text-[.75rem]">Buy
+              Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://kit.fontawesome.com/edc0ec51cd.js" crossorigin="anonymous"></script>
+  <script>
+    const toggler = document.getElementById("toggler");
+    const navLink = document.getElementById("nav-link");
+    const main = document.getElementById("main");
+    const accountData = document.getElementById("accountdata");
+
+    toggler.addEventListener('click', function () {
+      navLink.classList.toggle("expand");
+    });
+    main.addEventListener('click', function () {
+      navLink.classList.remove("expand");
+    });
+    function account() {
+      accountData.classList.toggle("show");
+    }
+    main.addEventListener('click', function () {
+      accountData.classList.remove("show");
+    });
+
+
+
+    const slides = document.querySelector('#slider');
+const buttons = document.querySelectorAll('.button');
+
+let counter = 0;
+let intervalId;
+
+buttons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        goToSlide(index);
+        updateButtons(index);
+        resetInterval();
+    });
+});
+
+function goToSlide(index) {
+    slides.style.transform = `translateX(-${index * 100}%)`;
+    counter = index;
+}
+
+function updateButtons(index) {
+    buttons.forEach(button => {
+        button.classList.remove('active');
+    });
+    buttons[index].classList.add('active');
+}
+
+function autoAdvance() {
+    intervalId = setInterval(() => {
+        counter = (counter + 1) % buttons.length;
+        goToSlide(counter);
+        updateButtons(counter);
+    }, 5000);
+}
+
+function resetInterval() {
+    clearInterval(intervalId);
+    autoAdvance();
+}
+
+autoAdvance(); // Start the auto-advance when the page loads
+
+  </script>
+</body>
+
+</html>
